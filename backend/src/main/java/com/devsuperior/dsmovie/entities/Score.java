@@ -1,6 +1,5 @@
 package com.devsuperior.dsmovie.entities;
 
-import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -24,12 +23,7 @@ public class Score {
     public void setUser(User user){
         id.setUser(user);
     }
-
-    public Score(ScorePK id, Double value) {
-        this.id = id;
-        this.value = value;
-    }
-
+    
     public ScorePK getId() {
         return id;
     }
