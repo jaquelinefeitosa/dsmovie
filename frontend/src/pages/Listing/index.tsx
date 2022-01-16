@@ -1,7 +1,14 @@
+import axios from "axios";
 import MovieCard from "components/Navbar/MovieCard";
 import Pagination from "components/Navbar/Pagination";
 
 function Listing() {
+
+    // FORMA ERRADA
+    axios.get("https://jack-dsmovie.herokuapp.com")
+    .then(response => {
+        console.log(response.data);
+    });
 
     return (
         <>
